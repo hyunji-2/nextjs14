@@ -1,5 +1,5 @@
 import Movie from "../../components/movie";
-import styles from "../../styles/home.module.css";
+import styles from "../../styles/home.module.scss";
 import { API_URL } from "../constants";
 
 export const metadata = {
@@ -23,6 +23,7 @@ export default async function HomePage() {
           id={movie.id}
           title={movie.title}
           poster_path={movie.poster_path}
+          release_date={movie.release_date}
         />
       ))}
     </div>
